@@ -1,24 +1,35 @@
 package partA.ex02;
 
 public class SwitchObservation {
-    public static void main(String args[]) {
+
+    public static String observation(){
+        String response ="";
+
         char option = 'A';
         int aCount = 0, bCount = 0, cCount = 0;
         switch (option) {
             case 'A':
                 aCount++;
-                System.out.println("Count of A  " + aCount);
+               response += ("Count of A  " + aCount);
                 break;
             case 'B':
                 bCount++;
-                System.out.println("Count of B  " + bCount);
+                response +=("Count of B  " + bCount);
                 break;
             case 'C':
                 cCount++;
-                System.out.println("Count of B  " + cCount);
+                response +=("Count of B  " + cCount);
                 break;
 
         }
+
+
+        return response;
+    }
+    public static void main(String args[]) {
+        String observationOutput = observation();
+        System.out.println(observationOutput);
+
 
     }
 }
